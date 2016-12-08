@@ -1,0 +1,20 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/geo-location/geo-location.html">
+
+</head><body><dom-module id="WatcPosition-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>широта:[[lat]]</h2>   <h2>долгота:[[lng]]</h2>
+    <geo-location latitude="{{lat}}" longitude="{{lng}}">
+      
+    </geo-location>
+  </template>
+
+  <script>Polymer({is:"WatcPosition-app",properties:{prop1:{type:String,value:"WatcPosition-app"}}});</script>
+</dom-module>
+</body></html>
